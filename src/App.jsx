@@ -1,6 +1,8 @@
-import Home from "./Home.jsx"
+import Acceuil from "./Acceuil.jsx"
 import Documentations from "./Documentations.jsx"
-import VeillesTechnologiques from "./VeillesTechnologiques.jsx"
+import Ecole from "./Ecole.jsx"
+import Entreprise from "./Entreprise.jsx"
+import Veilles from "./Veilles.jsx"
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 
 function App() {
@@ -8,15 +10,17 @@ function App() {
         <>
             <BrowserRouter>
                 <nav>
-                    <Link to="/">Home</Link> |{" "}
+                    <Link to="/">Acceuil</Link> |{" "}
                     <Link to="/documentations">Documentations</Link> |{" "}
-                    <Link to="/veillestechnologiques">Veilles technologiques</Link> |{" "}
+                    <Link to="/veilles">Veilles</Link>
                 </nav>
 
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<Acceuil />} />
                     <Route path="/documentations" element={<Documentations />} />
-                    <Route path="/veillestechnologiques" element={<VeillesTechnologiques />} />
+                    <Route path="/veilles" element={<Veilles />} />
+                    <Route path="/ecole" element={<Ecole />} />
+                    <Route path="/entreprise" element={<Entreprise />} />
                 </Routes>
             </BrowserRouter>
         </>

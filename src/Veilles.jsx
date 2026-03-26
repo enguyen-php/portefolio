@@ -1,4 +1,4 @@
-function VeillesTechnologiques() {
+function Veilles() {
     return (
         <>
             <h1>Bienvenue sur mes veilles technologiques</h1>
@@ -10,4 +10,4 @@ function VeillesTechnologiques() {
     )
 }
 
-export default VeillesTechnologiques
+export default Veilles
