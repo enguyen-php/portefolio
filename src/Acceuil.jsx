@@ -1,9 +1,19 @@
 function Acceuil() {
     return (
-        <>
-            <h1>Bienvenu sur mon portfolio</h1>
-            <h2>NGUYEN Ethan</h2>
-        </>
+        <div className="card">
+            <h2>Bienvenue sur mon portfolio</h2>
+            <h1>NGUYEN Ethan</h1>
+
+            <p>
+                Étudiant en BTS SIO, passionné par l’informatique, le développement
+                web et la cybersécurité.
+            </p>
+
+            <p>
+                Sur ce site, vous trouverez mes projets, mes documentations et mes
+                veilles technologiques.
+            </p>
+        </div>
     )
 }
 

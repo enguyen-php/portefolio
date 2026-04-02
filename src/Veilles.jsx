@@ -1,12 +1,18 @@
 function Veilles() {
     return (
-        <>
-            <h1>Bienvenue sur mes veilles technologiques</h1>
-            <br /><h2>Voici ma 1ère veille technologique :</h2>
-            <a href="">...</a>
-            <br /><h2>Voici ma 2ème veille technologique :</h2>
-            <a href="">...</a>
-        </>
+        <div className="card">
+            <h2>Veilles Technologiques</h2>
+
+            <p>
+                Voici mes différentes veilles réalisées durant ma formation.
+            </p>
+
+            <h3>Veille 1</h3>
+            <a href="#">Voir la veille</a>
+
+            <h3>Veille 2</h3>
+            <a href="#">Voir la veille</a>
+        </div>
     )
 }
 

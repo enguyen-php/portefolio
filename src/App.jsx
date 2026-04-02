@@ -4,20 +4,23 @@ import Ecole from "./Ecole.jsx"
 import Entreprise from "./Entreprise.jsx"
 import Veilles from "./Veilles.jsx"
 import Apropos from "./Apropos.jsx"
-import img1 from "./assets/img1.webp"
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import "./App.css"
 
 function App() {
     return (
-        <>
-            <BrowserRouter>
+        <BrowserRouter>
+            <header className="header"> 
+                <h1>NGUYEN Ethan</h1>
                 <nav>
-                    <Link to="/">Acceuil</Link> |{" "}
-                    <Link to="/documentations">Documentations</Link> |{" "}
-                    <Link to="/veilles">Veilles</Link>
-                    <Link to="/apropos">Apropos</Link>
+                    <Link className="nav-link" to="/">Accueil</Link>
+                    <Link className="nav-link" to="/documentations">Documentations</Link>
+                    <Link className="nav-link" to="/veilles">Veilles</Link>
+                    <Link className="nav-link" to="/apropos">À propos</Link>
                 </nav>
+            </header>
 
+            <main className="container">
                 <Routes>
                     <Route path="/" element={<Acceuil />} />
                     <Route path="/documentations" element={<Documentations />} />
@@ -26,10 +29,8 @@ function App() {
                     <Route path="/entreprise" element={<Entreprise />} />
                     <Route path="/apropos" element={<Apropos />} />
                 </Routes>
-            </BrowserRouter>
-
-            <img src="img1" alt="./assets/img1.webp" />
-        </>
+            </main>
+        </BrowserRouter>
     )
 }
 

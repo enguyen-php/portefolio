@@ -1,13 +1,21 @@
 function Entreprise() {
     return (
-        <>
-            <h1>Durant les 2 années de BTS SIO, nous avons</h1>
-            <h1>réalisés 4 projets différents pour répondre</h1>
-            <h1>aux besoins de notre client M2L.</h1>
-            <h2>Les Ateliers de Professionnalisation</h2>
-            <h3>AP-3 & 4 (Mise en place des solutions proposées, Amélioration et testes de fonctionnels de l'infrastructure de M2L)</h3>
-            <a href="#">...</a>
-        </>
+        <div className="card">
+            <h2>Expérience en Entreprise</h2>
+
+            <p>
+                Durant ma formation, j’ai également travaillé sur des projets en
+                entreprise.
+            </p>
+
+            <h3>Projet principal</h3>
+            <p>
+                Mise en place et amélioration d’une infrastructure informatique,
+                avec tests et validation des solutions.
+            </p>
+
+            <a href="#">Voir le projet</a>
+        </div>
     )
 }
 

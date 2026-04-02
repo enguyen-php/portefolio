@@ -1,22 +1,27 @@
-import Ecole from "./Ecole.jsx"
-import Entreprise from "./Entreprise.jsx"
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 function Documentations() {
     return (
-        <>
-            <h1>Veuillez trouver le "Tableau de synthèse" et</h1>
-            <h1>toutes les documentations relatives à ma</h1>
-            <h1>formation et mes projets en entreprise.</h1>
-            <a href="#">VISUALISER MON TABLEAU DE SYNTHESE en PDF</a>
-            <a href="#">TELECHARGER MON TABLEAU DE SYNTHESE en version modifiable</a>
-            <h2>Mes réalisations</h2>
+        <div className="card">
+            <h2>Documentations</h2>
 
-            <nav>
-                <Link to="/ecole">Ecole</Link> |{" "}
-                <Link to="/entreprise">Entreprise</Link>
+            <p>
+                Vous trouverez ici le tableau de synthèse ainsi que toutes les
+                documentations relatives à ma formation et à mes projets.
+            </p>
+
+            <div className="links">
+                <a href="#">📄 Visualiser le tableau de synthèse (PDF)</a>
+                <a href="#">⬇️ Télécharger la version modifiable</a>
+            </div>
+
+            <h3>Mes réalisations</h3>
+
+            <nav className="sub-nav">
+                <Link to="/ecole">🎓 École</Link>
+                <Link to="/entreprise">🏢 Entreprise</Link>
             </nav>
-        </>
+        </div>
     )
 }
 
